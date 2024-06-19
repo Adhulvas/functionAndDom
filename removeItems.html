@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+    <select id="colorSelect">
+      <option value="red">red</option>
+      <option value="green">green</option>
+      <option value="white">white</option>
+      <option value="black">black</option>
+    </select>
+    <button onclick="removeElement()">Remove item</button>
+
+    <script>
+      
+      function removeElement() {
+        const select = document.getElementById('colorSelect')
+        const target = select.lastElementChild;
+        select.removeChild(target);
+      }
+    </script>
+</body>
+</html>
+
